@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto pin</title>
     <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./Estilos.css">
+    <link rel="stylesheet" href="./stiloslider.css">
+
 </head>
 
 <body>
@@ -30,7 +33,18 @@
     </div>
 
     <div class="inicio center" id="inicio">
-        <h1>Inicio</h1>
+        <div class="slider">
+            <ul>
+                <li><img src="./6ba23cfe-2b00-40ed-b015-7917acef6c1d.jfif" alt="">
+                    
+                    <li><img src="./4732a159-6a21-4dbf-ae04-4c283852e101.jfif" alt="">
+                    </li>
+                <li><img src="./b6a9cd33-53d6-4654-b0b9-d4337280d85f.jfif" alt="">
+                    </li>
+                <li><img src="./bc69e234-8c6b-431a-ae86-7331a48255b9.jfif" alt="">
+                    </li>
+            </ul>
+        </div>
     </div>
 
     <div class="nosotros" id="nosotros">
@@ -55,6 +69,7 @@
 
     <div class="productos center" id="productos">
         <h1>Productos</h1>
+
     </div>
 
     <div class="servicios center" id="servicios">
@@ -62,12 +77,86 @@
     </div>
 
     <div class="contacto center" id="contacto">
-        <h1>Contacto</h1>
+        <form action="enviar.php" method="post">
+            <h2>CONTACTO</h2>
+            <input type="text" name ="Nombre" placeholder="Nombre" required>
+            <input type="text" name ="correo" placeholder="Correo" required>
+            <input type="text" name ="Telefono" placeholder="Telefono" required>
+            <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required> </textarea>
+            <input type="submit" value="ENVIAR" id="boton">
+    
+        </form>
     </div>
 
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="./js.js"></script>
+
 </body>
+<footer>
+           <div class ="container__footer">  
+        <div class="box__footer" >
+             <div class="logo">
+                  <img src="Images/logo-magtimus.png"   alt="">                
+
+             </div>
+             <div class="terms">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+            </div>  
+        </div>   
+
+              <div class="box__footer">                
+              <h2>Soluciones</h2>
+              <a href="#">App desarrollo</a>
+              <a href="#">App desarrollo</a>
+              <a href="#">App desarrollo</a>
+              <a href="#">App desarrollo</a>
+              <a href="#">App desarrollo</a>        
+        
+            </div>
+
+            <div class="box__footer">               
+                                                     
+                  <h2>Compañia</h2>
+                  <a href="#">App desarrollo</a>
+                  <a href="#">App desarrollo</a>
+                  <a href="#">App desarrollo</a>
+                  <a href="#">App desarrollo</a>
+                  <a href="#">App desarrollo</a>   
+
+                </div>
+                  
+                
+                  
+                  
+                <div class="box__footer">                  
+
+                    <h2>Redes sociales</h2>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i>Tiktok</a> 
+            
+                </div>
+
+        
+        
+        
+              </div>              
+                 
+
+         <div class="box__copyright">
+            <hr>
+            <p> Todos los derechos reservados 
+            <b>Magtimuspro</b></p>
+
+         </div>
+                              
+
+
+        
+
+</footer>
 
 </html>
