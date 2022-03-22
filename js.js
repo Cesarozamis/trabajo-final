@@ -13,11 +13,11 @@ $LINKS.forEach((Element) => {
 
 //abre y cierra el menu cuando le damos clic al menu
 $CONTENT_ICONS.addEventListener("click", () => {
-    toggle_buttons();
-    closeOrOpen("icon_multi btn", "icon_none");
+    toggle_buttons(); 
+    closeOrOpen("icon_multi btn",  "icon_none");
 });
 
-//funcion encargada de esconder y mostrar el menu
+//funcion encargada de esconder y mostrar el menu 
 function toggle_buttons() {
     $MENU.classList.toggle("menu_show");
 }
