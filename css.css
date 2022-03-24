@@ -565,3 +565,26 @@ footer{
     
 }
 /*Leandro*/
+
+/*mariana extra*/
+
+.section4_acordion_container {
+    background: url(Corredor.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    width: 100%;
+  }
+  .section4_acordion_container .section4_acordion {
+    display: flex;
+    width: 60%;
+  }
+  .section4_acordion_container .section4_acordion .section4_acordion_texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 36%;
+    margin-bottom: 37%;
+    margin-left: 15%;
+  }

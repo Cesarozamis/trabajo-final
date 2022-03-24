@@ -1,3 +1,26 @@
+<!-- Pautas de trabajo.
+    Para poner en evidencia lo aprendido durante el dictado se solicita desarrollar una aplicación web
+    que responda a las siguientes características:
+
+● One page en ReactJs tomando como referencia el diseño trabajado a lo largo del programa
+https://xd.adobe.com/view/51795fcc-7085-48a6-bb10-26070be36c9d-042a/specs/?hints=off
+
+● Debe respetar el diseño y funcionalidad:
+○ Bloque de navegación principal con comportamiento smooth scroll (al hacer clic
+animar hasta el destino).
+○ Bloque de slider con tres imágenes.
+○ Bloque de texto fullwidth.
+○ Bloque de slider centrado con dos pasadas y fondo a dos colores.
+○ Bloque con acordeón e imagen de fondo ubicada a la derecha.
+○ Bloque de formulario con validación al enviar (puede ser validado con JavaScript del
+lado del cliente, o bien del lado del servidor mediante Laravel), mostrar resultados
+de validación de forma clara.
+● Conectar con API REST creada en Laravel para el envío de formulario vía mail y guardar los
+datos del envío en una base de datos
+● Ambos desarrollos deben estar en modo online (expuesto en URLs accesibles vía web)
+● Se evaluará resolución Desktop y mobile-->
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,9 +30,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto pin</title>
     <link rel="stylesheet" href="./css.css">
+    <script src="/styles/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Bloque de navegación principal con comportamiento smooth scroll (al hacer clic
+animar hasta el destino).Cesar-->
     <nav class="menu" id="menu">
         <span><a href="#inicio">Logotipo</a></span>
         <ul class="list">
@@ -19,6 +45,7 @@
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <!-- Bloque de slider con tres imágenes.Santi-->
     </nav>
     <div class="content_icons" id="content_icons">
         <div class="icon_close icon_none btn" id="close">
@@ -43,7 +70,7 @@
             </ul>
         </div>
     </div>
-    
+    <!-- Bloque de texto fullwidth.Cesar-->
         <h1 class="seccion2" id="nosotros">NUESTRA HISTORIA</h1>
         <article class="section2 container-fluid">
             <section class="section2__container">
@@ -72,13 +99,10 @@
             </section>
         </article>
 
-    <!-- <div class="productos center" id="productos">
-        <h1>Productos</h1>
-
-    </div> -->
-     <!--Background degree, cuadrado en el centro con imagen y rectangulo buttom right con carrusel-->
-     <!--Leandro -->
-     <!--Background degree, cuadrado en el centro con imagen y rectangulo buttom right con carrusel-->
+        <!-- Bloque de slider centrado con dos pasadas y fondo a dos colores. Leandro -->
+        <!-- <div class="productos center" id="productos">
+            <h1>Productos</h1>
+        </div> -->
      <article class="section3 container-fluid" id="productos">
         <div class="section3__casa">
             <div class="section3__recuardoNaranja">
@@ -99,8 +123,9 @@
             </div>
         </div>
     </article>
+    <!--Bloque con acordeón e imagen de fondo ubicada a la derecha. Mariana-->
 
-    <div class="servicios center" id="servicios">
+   <!-- <div class="servicios center" id="servicios">
         <div class="box">
             <div class="box-item">
                 <p class="title">Obras civiles</p>
@@ -154,8 +179,72 @@
             
         </div>
     </div>
-    </div>
-
+    </div> -->
+     <!--Bloque con acordeón e imagen de fondo ubicada a la derecha.Mariana-->
+     <article class="section4_acordion_container" id="corredor">
+        <div class="section4_acordion">
+            <div class="accordion accordion-flush section4_acordion_texto" id="accordionCorredor">
+                <div class="box">
+                    <div class="box-item">
+                        <p class="title">Obras civiles</p>
+                        <ul class="box-item-content">
+                            <li>A través de la historia de nuestra compañía, hemos realizado una gran variedad de trabajos, desde Fábricas a Edificios de Viviendas, y en cada proyecto hemos cumplido con las expectativas de nuestros clientes. Consideramos muy importante las lecciones aprendidas, para seguir entregando excelentes resultados en cada uno de los nuevos desafíos</li>
+                
+                        </ul>
+                    </div>
+                    <div class="box-item">
+                        <p class="title">Montaje</p>
+                        <ul class="box-item-content">
+                            <li>Trabajos que realizamos:
+                
+                                . Conformado de estructuras metálicas, vigas, correas, columnas, rejas, insertos, etc.
+                                
+                                . Arenado de piezas metálicas para su posterior pintado.
+                                
+                                . Pintado de piezas metálicas con diferentes suministros, según especificación del cliente. (Pinturas Epoxi, esmalte sintético, etc)
+                                
+                                . Carga y transporte propio de las estructuras hacia la obra.
+                                
+                                . Gran depósito de materiales y materias primas.</li>
+                
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <div class="box-item">
+                            <p class="title">Obras civiles</p>
+                            <ul class="box-item-content">
+                                <li>A través de la historia de nuestra compañía, hemos realizado una gran variedad de trabajos, desde Fábricas a Edificios de Viviendas, y en cada proyecto hemos cumplido con las expectativas de nuestros clientes. Consideramos muy importante las lecciones aprendidas, para seguir entregando excelentes resultados en cada uno de los nuevos desafíos</li>
+                    
+                            </ul>
+                        </div>
+                        <div class="box-item">
+                            <p class="title">Montaje</p>
+                            <ul class="box-item-content">
+                                <li>Trabajos que realizamos:
+                    
+                                    . Conformado de estructuras metálicas, vigas, correas, columnas, rejas, insertos, etc.
+                                    
+                                    . Arenado de piezas metálicas para su posterior pintado.
+                                    
+                                    . Pintado de piezas metálicas con diferentes suministros, según especificación del cliente. (Pinturas Epoxi, esmalte sintético, etc)
+                                    
+                                    . Carga y transporte propio de las estructuras hacia la obra.
+                                    
+                                    . Gran depósito de materiales y materias primas.</li>
+                    
+                            </ul>
+                        </div>
+                    
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</article>
+<!-- Bloque de formulario con validación al enviar (puede ser validado con JavaScript del
+lado del cliente, o bien del lado del servidor mediante Laravel), mostrar resultados
+de validación de forma clara. Gian pier-->
     <div class="contacto center" id="contacto">
         <form action="enviar.php" method="post">
             <h2>CONTACTO</h2>
