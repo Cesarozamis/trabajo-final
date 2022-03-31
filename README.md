@@ -9,3 +9,7 @@ curso React
 https://www.udemy.com/course/fundamentos-de-reactjs-desde-la-documentacion-oficial/
 como borrar una carpeta git hub
 https://es.stackoverflow.com/questions/339154/c%C3%B3mo-borrar-una-carpeta-de-un-repositorio-de-github
+curso larabel+react
+https://m.youtube.com/playlist?list=PLrAw40DbN0l1VzVUsNWV2q4n7uarDvsqn
+curso react udemy
+https://www.udemy.com/course/react-js-para-principiantes-desde-cero-curso-gratuito/learn/lecture/30520536#overview
