@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90082d3c.css",
+    "main.js": "/static/js/main.df166566.js",
+    "static/js/787.29b410c8.chunk.js": "/static/js/787.29b410c8.chunk.js",
+    "static/media/RIZOMACONSTRUCTORA2.jpg": "/static/media/RIZOMACONSTRUCTORA2.4bde2f5215dd216458a4.jpg",
+    "static/media/b6a9cd33-53d6-4654-b0b9-d4337280d85f.jpg": "/static/media/b6a9cd33-53d6-4654-b0b9-d4337280d85f.7f2a9c199e0dfe143741.jpg",
+    "index.html": "/index.html",
+    "main.90082d3c.css.map": "/static/css/main.90082d3c.css.map",
+    "main.df166566.js.map": "/static/js/main.df166566.js.map",
+    "787.29b410c8.chunk.js.map": "/static/js/787.29b410c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90082d3c.css",
+    "static/js/main.df166566.js"
+  ]
+}

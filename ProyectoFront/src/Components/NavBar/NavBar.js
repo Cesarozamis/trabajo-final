@@ -7,15 +7,15 @@ function NavBar (props){
       
       
       if(click === '' ) {
-        setClick('is-active')
-        console.log('click: ', click)
-       }
-      else {
-        setClick('')
-        console.log('click: ', click)
-      }
+          setClick('is-active')
+          console.log('click: ', click)
+        }
+        else {
+            setClick('')
+            console.log('click: ', click)
+        }
     }
-
+    
     return(
         <div className="container-fluid contenedor__menu">
             <header className='container-fluid header-container'>
@@ -46,7 +46,7 @@ function NavBar (props){
                 <nav className="navbar navbar-expand-lg navbar-light bg-transparent nav__menu" >
 
                     <div className="container top_logo">
-                        <img src="..\images\Sin título.png" alt="Logo Rizoma " className="d-inline-block align-text-top"></img>
+        <img src="../images/Sin título.png" alt="Logo" className="d-inline-block align-text-top"></img>
                     </div>
                     <button className="navbar-toggler" type="button" onClick={ () => showHamburger () }>
                         <span className="navbar-toggler-icon"></span>

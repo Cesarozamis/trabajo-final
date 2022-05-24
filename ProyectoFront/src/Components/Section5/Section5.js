@@ -19,7 +19,7 @@ const Section5 = () => {
                 <div className="pie-pagina">
                     <p className="pie-pagina__p5"><sup>2022 © Todos los derechos reservados</sup></p>
                     <div className="footer_logo">
-                        <img className="pie-pagina__footer-logo" src="./images/sin título.png" alt="Logo"/>
+                        <img className="pie-pagina__footer-logo" src="../images/Sin título.png" alt="Logo"/>
                     </div>
                 </div>
             </footer>

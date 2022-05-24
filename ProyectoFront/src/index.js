@@ -9,6 +9,7 @@ import './Components/Section3/section3.scss';
 import './Components/Section5/section5.scss';
 import './Components/Section4/section4.scss';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import axios from 'axios';
 
 
 ReactDOM.render(
@@ -19,3 +20,4 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+

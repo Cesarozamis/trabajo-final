@@ -44,14 +44,29 @@ const Formulario = () => {
                          resetForm();
                          cambiarFormularioEnviado(false);
                          setTimeout(() => {
-                              cambiarFormularioEnviado(true);
+                            cambiarFormularioEnviado(true);
                          }, 2000)
-                          axios.post('http://localhost:85/api/saveUsers', valores)
-                         // axios.post('https://servidor/api/saveUsers', valores)
+                         axios.post('http://localhost/PinBackend/public/index.php/api/registroConsulta', valores)
+                         .then(function (response) {
+                              console.log(response);
+                         })
+                         .catch(function (error) {
+                              console.log(error);
+                         });
+                         // axios.post('https://servidor/api/saveUsers', valores)*
 
-                         
-                    }}
-               >
+                         /*let xhr = new XMLHttpRequest();
+                    xhr.open("POST", "http://localhost/PinBackend/public/index.php/api/registroConsulta");
+
+                    xhr.setRequestHeader("Accept", "application/json");
+                    xhr.setRequestHeader("Content-Type", "application/json");
+
+                    xhr.onload = () => console.log(xhr.responseText);
+
+
+                    xhr.send(valores);*/
+                    }}                  
+                    >
                     {({ values, errors, touched, handleSubmit, handleChange, handleBlur }) => (
                          <form onSubmit={handleSubmit} id="formulario" className="formulario_globo__content__form">
                               <div className="formulario_globo__content__form__name">
