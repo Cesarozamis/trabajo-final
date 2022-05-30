@@ -26,7 +26,7 @@ const Formulario = () => {
                          if (!valores.email) {
                               errores.email = 'Por favor ingrese su email'
                          } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)) {
-                              errores.email = 'Your email can only contain letters, numbers, hyphens, periods and spaces'
+                              errores.email = 'Su correo electrónico solo puede contener letras, números, guiones, puntos y espacios'
                          }
                          // Validamos el phone
                          if (!valores.phone) {
@@ -46,7 +46,7 @@ const Formulario = () => {
                          setTimeout(() => {
                             cambiarFormularioEnviado(true);
                          }, 2000)
-                         axios.post('http://localhost/PinBackend/public/index.php/api/registroConsulta', valores)
+                         axios.post('http://laravel.rizomaconstructora.online/public/index.php/api/registroConsulta', valores)
                          .then(function (response) {
                               console.log(response);
                          })
